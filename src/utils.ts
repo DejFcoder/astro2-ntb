@@ -1,6 +1,6 @@
 //Format Date
-function formatDate(date) {
-  const options = {
+function formatDate(date: Date): string {
+  const options: Intl.DateTimeFormatOptions = {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -10,7 +10,7 @@ function formatDate(date) {
 }
 
 //Capitalize the first letter
-function capitalize(str) {
+function capitalize(str: string): string {
   if (typeof str !== "string" || str.length === 0) {
     return str;
   }
